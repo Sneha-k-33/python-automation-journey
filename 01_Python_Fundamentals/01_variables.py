@@ -45,3 +45,4 @@ print("Ship Name:", ship_name)
 print("Experience (Years):", experience_years)
 print("Salary:", salary)
 print("Is Active:", is_active)
+
