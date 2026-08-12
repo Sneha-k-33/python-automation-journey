@@ -232,3 +232,26 @@ print("Registered Email :", registered_email)
 print("Entered Email    :", entered_email)
 print("Registered Password:", registered_password)
 print("Entered Password :", entered_password)
+
+if entered_email == registered_email:
+    print("Email is correct")
+
+if entered_password == registered_password:
+    print("Password is correct")
+
+registered_email = "sneeha36@gmail.com"
+entered_email = "sneeha36@gmail.com"
+
+registered_password = "Password@123"
+entered_password = "Pasuword@123"
+
+
+if entered_email == registered_email and entered_password == registered_password:
+    print("Login Successful")
+
+if entered_email == registered_email and entered_password == registered_password:
+    print("Login Successful")
+else:
+    print("Invalid Email or Password")
+
+
