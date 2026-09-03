@@ -243,7 +243,7 @@ registered_email = "sneeha36@gmail.com"
 entered_email = "sneeha36@gmail.com"
 
 registered_password = "Password@123"
-entered_password = "Pasuword@123"
+entered_password = "Password@123"
 
 
 if entered_email == registered_email and entered_password == registered_password:
@@ -253,5 +253,4 @@ if entered_email == registered_email and entered_password == registered_password
     print("Login Successful")
 else:
     print("Invalid Email or Password")
-
 

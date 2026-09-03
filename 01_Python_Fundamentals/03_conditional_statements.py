@@ -116,7 +116,7 @@ else:
 # Boundary Value Analysis - Phone Number
 # ==========================================
 
-phone_number = "98765435"
+phone_number = "9876543789"
 
 if len(phone_number) != 10:
     print("Phone number validation FAILED")
@@ -124,14 +124,136 @@ else:
     print("Phone number validation PASSED")
 
 
+# ==========================================
+# Boundary Value Analysis - Crew Count
+# ==========================================
+
+total_crew = 1
+
+if total_crew <= 0:
+    print("Crew count validation FAILED")
+else:
+    print("Crew count validation PASSED")
 
 
+# ============================================
+# Step 4 - Email String & Boundary Validation
+# ============================================
+
+# Email Length Validation
+email = "test123@gmail.com"
+
+if len(email) >= 10:
+    print("Email length validation PASSED")
+else:
+    print("Email length validation FAILED")
+
+# ============================================
+# Step 4.2 - Leading / Trailing Spaces
+# ============================================
+
+email = "  sneha36@gmail.com  "
+
+print("\nOriginal Email:", email)
+
+clean_email = email.strip()
+
+print("Clean Email   :", clean_email)
 
 
+ # ============================================
+# Step 4.3 - Missing @ Symbol
+# ============================================
+
+email = "sneha36gmail.com"
+
+if "@" not in email:
+    print("Invalid Email: @ symbol is missing")
+else:
+    print("Email contains @ symbol")
+
+# ============================================
+# Step 4.4 - Missing Domain
+# ============================================
+
+email = "sneha36@"
+
+username, domain = email.split("@")
+
+if domain == "":
+    print("Invalid Email: Domain is missing")
+else:
+    print("Domain is present")
 
 
+# ============================================
+# Step 4.5 - Missing Username
+# ============================================
+
+email = "@gmail.com"
+
+username, domain = email.split("@")
+
+if username == "":
+    print("Invalid Email: Username is missing")
+else:
+    print("Username is present")
 
 
+# ============================================
+# Step 4.6 - Multiple @ Symbols
+# ============================================
+
+email = "sneha@@gmail.com"
+
+if email.count("@") != 1:
+    print("Invalid Email: Email must contain exactly one @ symbol")
+else:
+    print("Email contains one @ symbol")
+
+    # ============================================
+# Step 4.7 - Missing Dot in Domain
+# ============================================
+
+email = "sneha@gmail"
+
+if "." not in email.split("@")[1]:
+    print("Invalid Email: Domain must contain a dot")
+else:
+    print("Valid domain format")
 
 
+email = "sneha36gmail.com"
+
+if "@" not in email:
+    print("Invalid Email: @ symbol is missing")
+else:
+    print("Email contains @ symbol")
+
+
+# ============================================
+# Step 4.8 - Replace Text
+# ============================================
+
+status = "Test Failed"
+
+updated_status = status.replace("Failed", "Passed")
+
+print("Original Status:", status)
+print("Updated Status:", updated_status)
+
+
+# ============================================
+# Step 4.9 -Understanding replace()
+# ============================================
+
+status = "Test Failed"
+
+status.replace("Failed", "Passed")
+
+print(status)
+
+status = status.replace("Failed", "Passed")
+
+print(status)
 
