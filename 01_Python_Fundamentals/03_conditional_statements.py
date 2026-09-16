@@ -257,12 +257,148 @@ status = status.replace("Failed", "Passed")
 
 print(status)
 
-# ============================================
-# Step 4.10 - Split Text Using split()
+status ="Login Failed"
+status.replace ("Failed", "Passed")
+print(status)
+
+status = status.replace ("Failed", "Passed")
+print(status)
+
+api_response = "API Test Failed" 
+api_response = api_response.replace ("Failed", "Passed") 
+print(api_response)
+
+# Step 4.11 - Understanding split()
 # ============================================
 
-email = "testing@gmail.com"
+api_response = "Login,Success,200"
+result = api_response.split(",")
 
-result = email.split("@")
+print(result[0])
+print(result[1])
+print(result[2])
+
+test_data = "Login| Sucess|200"
+result = test_data.split("|")
+print(result)
+
+test_result = "Signup|Passed|201"
+result = test_result.split("|")
+print(result)
+print(result[0])
+print(result[1])
+print(result[2])
+
+test_data = "Registration|Passed|201"
+result = test_data.split("|")
+print(result)
+print(result[0])
+print(result[1])
+print(result[2])
+
+# Step 4.13 - split() with spaces
+# ============================================
+
+message = "Login Test Passed"
+
+result = message.split()
 
 print(result)
+print(result[0])
+print(result[1])
+print(result[2])
+
+# Step 4.13 Practice
+# ============================================
+
+test_message = "API Test Failed"
+
+result = test_message.split()
+
+print(result)
+print(result[0])
+print(result[1])
+print(result[2])
+
+# ============================================
+# Step 4.14 - split() and variables
+# ============================================
+
+api_response = "Login,Passed,200"
+
+result = api_response.split(",")
+
+test_name = result[0]
+status = result[1]
+status_code = result[2]
+
+print(test_name)
+print(status)
+print(status_code)
+
+# ============================================
+# Step 4.14 Practice
+# ============================================
+
+api_response = "Registration,Failed,400"
+
+result = api_response.split(",")
+
+test_name = result[0]
+status = result[1]
+status_code = result[2]
+
+print(test_name)
+print(status)
+print(status_code)
+
+# ============================================
+# Step 4.15 - Unpacking split() result
+# ============================================
+
+api_response = "Registration,Failed,400"
+
+test_name, status, status_code = api_response.split(",")
+
+print(test_name)
+print(status)
+print(status_code)
+
+# ============================================
+# Step 4.15 Practice
+# ============================================
+
+api_response = "Login,Passed,200"
+
+test_name, status, status_code = api_response.split(",")
+
+print(test_name)
+print(status)
+print(status_code)
+
+# ============================================
+# Step 4.16 - len() with split()
+# ============================================
+
+api_response = "Login,Passed,200"
+
+result = api_response.split(",")
+
+print(result)
+print(len(result))
+
+# ============================================
+# Step 4.16 Practice
+# ============================================
+
+api_response = "Registration,Passed,201"
+
+result = api_response.split(",")
+
+print(result)
+print(len(result))
+
+if len(result) == 3:
+    print("Response format is valid")
+else:
+    print("Response format is invalid")
