@@ -257,3 +257,12 @@ status = status.replace("Failed", "Passed")
 
 print(status)
 
+# ============================================
+# Step 4.10 - Split Text Using split()
+# ============================================
+
+email = "testing@gmail.com"
+
+result = email.split("@")
+
+print(result)
