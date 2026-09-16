@@ -402,3 +402,49 @@ if len(result) == 3:
     print("Response format is valid")
 else:
     print("Response format is invalid")
+
+# ============================================
+# Step 4.17 - Checking a Specific Value After split()
+# ============================================
+
+api_response = "Login,Passed,200"
+
+result = api_response.split(",")
+
+if result[1] == "Passed":
+    print("Test Passed")
+else:
+    print("Test Failed")
+
+# ============================================
+# Step 4.17 Practice
+# ============================================
+
+api_response = "SignUp,Passed,201"
+
+result = api_response.split(",")
+
+if result[1] == "Passed":
+    print("Sign Up Test Passed")
+else:
+    print("Sign Up Test Failed")
+
+    
+api_response = "registration,Failed,400"
+result = api_response.split(",")
+if result[1] == "Passed":
+    print("Registration Test Passed")
+else: print("Registration Test Failed")
+
+4.18
+api_response = "Login,Passed,200"
+result = api_response.split(",")
+if result[1] == "Passed" and result[2] == "200":
+ print("Login API Test Passed")
+else: print("Login API Test Failed")
+
+api_response = "Registration,Passed,200"
+result = api_response.split(",")
+if result[1] == "Passed" and result[2] == "200":
+    print("Registration API Test Passed")
+else: print("Registration API Test Failed")
