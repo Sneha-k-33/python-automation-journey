@@ -448,3 +448,209 @@ result = api_response.split(",")
 if result[1] == "Passed" and result[2] == "200":
     print("Registration API Test Passed")
 else: print("Registration API Test Failed")
+
+4.19
+api_response = "Registration, Passed,400" 
+result = api_response.split(",")
+if result[1] == "Passed" and (result[2] == "499"):
+ print("registration API Test Passed")
+else: print("registartion API Test Failed")
+
+4.20
+api_response = "Login, Failed, 401"
+result = api_response.split(",")
+if not result[1] == "Passed":
+    print("Login Test Failed")
+else:
+    print("Login Test Passed")
+
+4.21
+message = "Login Test Passed"
+if "Passed" in message:
+    print("Success Message Found")
+else:
+    print("success Message Not Found")
+
+api_response = "Login test Passed Successfully"
+if "Passed" in api_response:
+    print("Expected result found")
+else:
+    print("Expected result not found")
+
+    4.22
+
+    message = "Login Test Passed"
+    if "Failed" not in message:
+        print("Failure message not found")
+    else: 
+        print("Failure message found")
+print(message)
+print("Failed" in message)
+print("Failed" not in message)
+
+api_response = "Login completed successfully"
+if "Error" not in api_response:
+    print("Login completed without error")
+else: 
+    print("Error found is login response") 
+
+4.23
+api_response = "Login, Passed, 200"
+result = api_response.split(",")
+if "Passed" in result:
+    print("Passed status found")
+else: print("Passed status not found")
+
+api_response = "Registration, Passed, 400"
+result = api_response.split(",")
+if "Failed" in result:
+ print("Failed status found")
+else: 
+  print("Failed status not found")
+
+4.24
+api_response = "Login, Passed, 200"
+result = api_response.split(",")
+if "Passed" in result:
+    print("Test status found")
+if "Failed" not in result:
+    print("No failure status found")
+
+4.25
+status ="Passed"
+status = status.lower()
+print(status)
+
+status = "PASSED"
+if status.lower() =="passed":
+    print("Test Passed")
+else: print("Test Failed")
+
+4.26
+status = "Passed"
+print(status.upper())
+
+
+4.27
+message = "API Test Passed"
+print(message.startswith("API"))
+print(message.endswith("Passed"))
+
+4.28
+test_cases = ["Login", "Registration", "Logout"]
+for test in test_cases:
+    print(test)
+
+4.29
+test_results = ["Passed", "Failed", "Passed"]
+for result in test_results:
+    if result == "Passed":
+        print("Test Passed")
+else: print("Test Failed")
+
+4.30
+for attempt in range(3):
+    print("Login attempt", attempt + 1)
+
+4.31
+attempt = 1
+while attempt <=3:
+    print("Login attempt", attempt)
+    attempt +=1
+
+4.32
+statuses = ["Passed", "Passed", "Failed", "Passed"]
+for status in statuses:
+    if status == "Failed":
+        print("Failure Found")
+        break
+
+4.33
+statuses = ["Passed", "Failed", "Passed"]
+for status in statuses:
+    if status =="Failed":
+        continue
+    print(status)
+
+4.34
+def login_test():
+    print ("Login Test Exceuted")
+login_test()
+
+4.35
+def check_status(status):
+
+    if status == "Passed":
+        print("Test Passed")
+    else:
+        print("Test Failed")
+
+check_status("Passed")
+check_status("Failed")
+
+4.36
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(10, 20)
+
+print(result)
+
+
+def check_status(status):
+    return status == "Passed"
+
+result = check_status("Passed")
+
+print(result)
+
+4.37
+test_cases = ["Login", "Signup", "Logout"]
+print(test_cases[0])
+test_cases.append("Payment")
+test_cases.remove("Logout")
+print(len(test_cases))
+
+# 4.38 - Dictionaries
+user = {
+    "name": "Sneha",
+    "role": "QA",
+    "status": "Active"
+}
+
+print(user["name"])
+print(user["role"])
+
+
+response = {
+    "status": "Passed",
+    "status_code": 200
+}
+
+if response["status_code"] == 200:
+    print("API Passed")
+
+# 4.39 - Dictionary Methods
+response = {
+    "status": "Passed",
+    "status_code": 200
+}
+
+print(response.keys())
+print(response.values())
+if "status" in response:
+    print("Status field exists")
+            
+# 4.40 -Tuples
+status_codes = (200, 201, 400, 404, 500)
+
+print(status_codes[0])
+
+#4.41 — Sets
+roles = {"QA", "Developer", "QA"}
+
+print(roles)
+
+
+  
+ 
