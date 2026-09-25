@@ -651,6 +651,36 @@ roles = {"QA", "Developer", "QA"}
 
 print(roles)
 
+#4.42 — Exception Handling
+try:
+    number = 10 / 0
 
-  
- 
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+#4.43 — try / except / finally
+try:
+    print("Executing test")
+
+except Exception:
+    print("Error occurred")
+
+finally:
+    print("Test execution completed")
+
+#4.44 — Reading a File
+file = open("test_data.txt", "r")
+data = file.read()
+print(data)
+file.close()
+
+
+
+
+
+
+
+
+
+
+
